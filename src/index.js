@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+//functional component below uses capital first letter
+//component can only return 1 JSX element, can get around by wrapping 2 or more elements in a <div>
 function MyInfo () {
   return (
       <div>
@@ -15,4 +17,5 @@ function MyInfo () {
     )
 }
 
+//JSX
 ReactDOM.render(<MyInfo/>, document.getElementById('root'))
