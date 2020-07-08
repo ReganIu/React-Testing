@@ -1,13 +1,14 @@
-p {
-    font-size: large;
-    font-family: Cambria;
+body {
+    margin: 0;
 }
 
-ul {
-    font-family: Arial;
-}
+.navbar h1{
+    height: 100px;
+    font-family: Courier;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-h1 {
-    font-style: oblique;
-    font-family: Tahoma;
 }
