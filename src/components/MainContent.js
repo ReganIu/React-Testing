@@ -3,7 +3,16 @@ import React from 'react'
 function MainContent () {
     return (
         <main>
-            <p> Hi I am a student at UofT!</p>
+
+        <input type="checkbox" />
+        <p>Project 1</p>
+
+        <input type="checkbox" />
+        <p>Project 2</p>
+
+        <input type="checkbox" />
+        <p>Project 3</p>
+        
         </main>
     )
 }

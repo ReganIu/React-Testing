@@ -5,8 +5,8 @@ function Footer() {
         <footer>
             <h3>Contact info:</h3>
                 <ul>
-                    <li> reganiu@hotmail.com</li>
-                    <li> @reganiu</li>
+                    <li> asdf</li>
+                    <li> asd</li>
                 </ul>
         </footer>
     )
