@@ -6,7 +6,6 @@ function App() {
   const newNum = num.map(function(num) {
     return num * 2 
   })
-  console.log(newNum)
 
   return (
     <div>
