@@ -1,6 +1,6 @@
 import React from "react"
-//import TodoItem from "./TodoItem"
-//import todosData from "./todosData"
+import TodoItem from "./TodoItem"
+import todosData from "./todosData"
 
 // function App() {
 //   const todoItems = todosData.map(item => <TodoItem key={item.id} item={item}/>)
@@ -14,7 +14,7 @@ import React from "react"
 
 
 // class component
-class App extends React.Component {
+// class App extends React.Component {
 //   render() {
 //     const todoItems = todosData.map(item => <TodoItem key={item.id} item={item}/>)
 
@@ -26,20 +26,37 @@ class App extends React.Component {
 //   }
 
 //constructor method
-  constructor () {
-    super()
-    this.state = {
-      answer: 'Yes'
+//   constructor () {
+//     super()
+//     this.state = {
+//       answer: 'Yes'
+//     }
+//   }
+//   render() {
+//     return ( 
+//       <div> 
+//         <h1> What is state? {this.state.answer} </h1>
+//       </div>
+//     )
+//   }
+// }
+
+
+class App extends React.Component {
+    constructor () {
+      super()
+      this.state = {
+        todos: todosData
+      }
     }
-  }
-  render() {
-    return ( 
-      <div> 
-        <h1> What is state? {this.state.answer} </h1>
-      </div>
-    )
-  }
+    render() {
+      const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item = {item}/>)
+      
+      return (
+          <div className='todo-list'>
+            {todoItems}
+          </div>
+        )
+    }
 }
-
-
 export default App
